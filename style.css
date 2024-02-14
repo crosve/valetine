@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    position: relative;
+}
+h2{
+    margin-top: 3em;
+    font-size: 3em;
+    text-shadow: #030202;
+    color: #d07a7a;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.response{
+    width: 100%;
+    height: 40px;
+    font-size: 2em;
+    color: #d07a7a;
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    
+    position: absolute; /* along with position: relative, allows no button to stay within container*/
+    width: 150px;
+    height: inherit;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+    
+}
+
+button:nth-child(1){
+    left: 2.5em;
+    background-color: #d07a7a;
+    color: white;
+    border: none;
+}
+
+button:nth-child(2){
+    right: 2.5em;
+    background-color: #d07a7a;
+    color: rgb(248, 248, 248);
+    background-color: #981515;
+    border: none;
+}
+
+button:hover{
+    background-color: #981515;
+    color: rgb(248, 248, 248);
+}
+
+
+.sheSaidYes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.newBody{
+    background-color: #d07a7a;
+}
+i{
+    position: absolute;
+    font-size: 7.5em;
+    color: red;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+.heart{
+    margin-top: 5em;
+    margin-left: 2em;
+    width: 70px;
+    height: 70px;
+    background: rgb(154, 54, 54);
+    position: absolute;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px rgb(229, 33, 33);
+    animation: heart .7s linear infinite ;
+   
+}
+
+@keyframes heart {
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(.8);
+    }
+    
+}
+
+.heart:before{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: rgb(154, 54, 54);
+    top: -50%; 
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px rgb(154, 54, 54);
+   
+
+}
+
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: rgb(154, 54, 54);
+    right: -50%; 
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px rgb(154, 54, 54);
+   
+}
+
+.cat{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #d07a7a;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-top: 2em;
+    margin-left: 2em;
+    animation: cat 1s linear infinite;
+}
